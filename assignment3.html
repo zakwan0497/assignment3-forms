@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Registry - Assignment 3</title>
+    <link rel="stylesheet" href="assignment3.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER BEGINS -->
+    <header>
+      <div class="logo-header">
+        <img src="assets/logo-header.svg" alt="header logo" />
+      </div>
+    </header>
+    <!-- HEADER ENDS -->
+
+    <!-- CONTAINER BEGINS -->
+    <main>
+      <h2>REGISTER YOUR BOOK</h2>
+
+      <table>
+        <form method="post" action="../minggu3/assignment3.html">
+          <tr>
+            <td>Book Details</td>
+            <td><hr /></td>
+          </tr>
+          <tr>
+            <td><label for="title">Title</label></td>
+            <td>
+              <input
+                type="text"
+                id="title"
+                placeholder="Your book title here. E.g. Harry Potter and The Fantastic Bootcamp"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="genre">Genre</label></td>
+            <td>
+              <input
+                type="text"
+                id="genre"
+                placeholder="Your book genre here. E.g. Fantasy"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="author">Author</label></td>
+            <td>
+              <input
+                type="text"
+                id="author"
+                placeholder="Your book author here. E.g. J. K. Rowling"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="publisher">Publisher</label></td>
+            <td>
+              <input
+                type="text"
+                id="publisher"
+                placeholder="Publisher of the book. E.g. Pustaka Melang"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Year Published">Year Published</label></td>
+            <td>
+              <input type="number" placeholder="1994" id="year" min="0" />
+            </td>
+          </tr>
+          <tr class="availability">
+            <td><label for="availability">Availability</label></td>
+            <td>
+              <input type="radio" name="Availability" />Online
+              <input type="radio" name="Availability" />In store
+              <input type="radio" name="Availability" />Online & In store
+            </td>
+          </tr>
+          <tr>
+            <td><label for="pages">Pages</label></td>
+            <td>
+              <input type="number" placeholder="514" id="pages" min="1" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="language">Language</label></td>
+            <td>
+              <input
+                type="text"
+                id="language"
+                placeholder="Language used in the book. E.g. English"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Registree Details</td>
+            <td><hr /></td>
+          </tr>
+          <tr>
+            <td><label for="name">Name</label></td>
+            <td>
+              <input
+                type="text"
+                id="name"
+                placeholder="Your name. E.g. Lannah Yeon"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                placeholder="Your email. E.g. l.yeon@email.com"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th colspan="2">
+              <input type="checkbox" />I hereby agree to follow all rules and
+              confirmed that all details are accurate
+            </th>
+          </tr>
+        </form>
+      </table>
+
+      <div>
+        <button type="submit" onclick="alert('Book Saved!')">
+          SAVE YOUR BOOK
+        </button>
+      </div>
+    </main>
+    <!-- CONTAINER ENDS -->
+
+    <!-- FOOTER BEGINS -->
+    <footer>
+      <div class="container">
+        <div class="top">
+          <div class="logo">
+            <img src="assets/logo-footer.svg" alt="footer logo" />
+          </div>
+          <div class="socials">
+            <img src="assets/insta.svg" alt="instagram icon" />
+            <img src="assets/fb.svg" alt="facebook icon" />
+            <img src="assets/twitter.svg" alt="twitter icon" />
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="left">
+            <div>
+              <p>Terms and conditions</p>
+            </div>
+            <div>
+              <p>Privacy policy</p>
+            </div>
+          </div>
+          <div class="right">
+            <div>
+              <p>+44 1332 412251</p>
+            </div>
+            <div>
+              <p>support@bbookshelf.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER ENDS -->
+  </body>
+</html>

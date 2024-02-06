@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    all: unset;
+    font-family: 'Inter', sans-serif;
+}
+    
+/* HEADER BEGINS */
+header{
+    background-color: #2a2c2e;
+    min-width: 800px;
+    max-width: 1200px; 
+    height: auto; 
+    margin: 16px auto; 
+    border-radius: 20px; 
+    padding: 20px 24px 20px 24px;  
+}  
+  
+header> .logo-header> img{  
+    width: 166px;
+    height: 40px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+ }  
+
+ header> .logo-header> img:hover{
+    cursor: pointer;
+ }
+/* HEADER ENDS */
+  
+/* CONTAINER BEGINS */  
+main{
+    color: white;
+    background-color: #2a2c2e;
+    min-width: 800px;
+    max-width: 1200px;
+    height: auto;
+    margin: 16px auto;
+    padding: 32px;
+    border-radius: 20px;
+}
+
+table{
+    width: 711px;
+    height: 900px;
+    margin-top: 24px;
+}
+
+h2{
+    font-weight: 200px;
+}
+
+input[type=text],
+input[type=number],
+input[type=email]{
+    width: 100%;
+    height: 56px;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+input[type=text],
+input[type=number],
+input[type=email]:focus{
+    border: 2px solid black;
+}
+
+input[type=radio]{
+    margin: 0 20px;
+}
+
+input[type=checkbox]{
+    margin: 20px 40px;
+}
+
+input:checked{
+    width: 20px;
+    height: 20px;
+}
+
+button{
+    all: unset;
+}
+
+button[type=submit]{
+    font-weight: 500px;
+    color: #000000;
+    background-color: #F4CE47;
+    width: 709px;
+    height: 56px;
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover{
+    cursor: pointer;
+    -ms-transform: scale(103%);
+    -webkit-transform: scale(103%);
+    transform: scale(103%);
+}
+/* CONTAINER ENDS */
+
+/* FOOTER BEGINS */
+footer> .container> .top{
+    background-color: #2a2c2e;
+    min-width: 800px;
+    max-width: 1248px;
+    height: 88px;
+    padding: 0 24px 0 24px;
+    margin: 0 auto;
+
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer> .container> .top> .logo:hover{
+    cursor: pointer;
+}
+
+footer> .container> .top> .socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+footer> .container> .top> .socials> img:hover{
+    cursor: pointer;
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+ 
+footer> .container> .bottom{
+    color: white;
+    background-color: #000000;
+    min-width: 800px;
+    max-width: 1248px;
+    height: 36px;
+    padding: 12px 24px 12px 24px;
+    margin: 0 auto;
+    font-size: 12px;
+
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer> .container> .bottom> .left,
+footer> .container> .bottom> .right{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 16px;
+}
+
+footer> .container> .bottom> .left> div> p:hover,
+footer> .container> .bottom> .right> div> p:hover{
+    cursor: pointer;
+}
+/* FOOTER ENDS */
